@@ -1,0 +1,10 @@
+<h1>You did it!</h1>
+<h3>You named ALL 50 states!</h3>
+
+<p>Here they are:</p>
+
+<div>
+  <% @states.each do |state| %>
+  <%= "#{state.id}.#{state.name}" %><br>
+  <% end %>
+</div>

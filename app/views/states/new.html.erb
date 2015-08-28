@@ -1,0 +1,12 @@
+<h1>Name the 50 States</h1>
+
+<div>
+  <%= @message %>
+</div>
+<br>
+
+<%= render 'form' %>
+
+<% @states.each do |state| %>
+  <%= "#{state.id}.#{state.name}" %><br>
+<% end %>
